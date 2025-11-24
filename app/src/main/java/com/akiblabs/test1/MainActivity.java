@@ -1,5 +1,6 @@
 package com.akiblabs.test1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,11 +30,13 @@ public class MainActivity extends AppCompatActivity {
         Button btn;
         TextView counter;
         Button reset_button;
+        Button sec_page_btn;
 
         // step 2: bind ui with java object
         btn = findViewById(R.id.button);
         counter = findViewById(R.id.count_text);
         reset_button = findViewById(R.id.reset);
+        sec_page_btn = findViewById(R.id.userapp_button);
 
         // step 3: onClickListener
 
@@ -49,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 cnt = 0;
                 counter.setText(""+cnt);
+            }
+        });
+        sec_page_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, user_app.class);
+                startActivity(i);
             }
         });
     }
