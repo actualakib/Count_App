@@ -49,10 +49,16 @@ public class user_app extends AppCompatActivity {
         save_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                output_username.setText(""+username);
-                output_phone.setText(""+phone);
-                output_blood_group.setText(""+blood_group);
-                output_gmail.setText(""+gmail);
+                // getText().toString() returns the user input
+                String nameText = username.getText().toString().trim();
+                String bloodText = blood_group.getText().toString().trim();
+                String phoneText = phone.getText().toString().trim();
+                String gmailText = gmail.getText().toString().trim();
+
+                output_username.setText(""+nameText);
+                output_phone.setText(""+phoneText);
+                output_blood_group.setText(""+bloodText);
+                output_gmail.setText(""+gmailText);
             }
         });
 

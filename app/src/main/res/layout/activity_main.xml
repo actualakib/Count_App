@@ -79,6 +79,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="#000000"
         android:text="User Info"
+        android:textColor="#FFFFFF"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
