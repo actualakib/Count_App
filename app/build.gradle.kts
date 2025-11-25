@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.akiblabs.test1"
+    namespace = "com.akiblabs.counter_app"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.akiblabs.test1"
+        applicationId = "com.akiblabs.counter_app"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

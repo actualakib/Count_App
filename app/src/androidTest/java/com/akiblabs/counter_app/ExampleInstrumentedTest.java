@@ -1,4 +1,4 @@
-package com.akiblabs.test1;
+package com.akiblabs.counter_app;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.akiblabs.test1", appContext.getPackageName());
+        assertEquals("com.akiblabs.counter_app", appContext.getPackageName());
     }
 }

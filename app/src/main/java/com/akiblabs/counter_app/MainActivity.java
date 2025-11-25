@@ -1,4 +1,4 @@
-package com.akiblabs.test1;
+package com.akiblabs.counter_app;
 
 import android.content.Intent;
 import android.os.Bundle;
